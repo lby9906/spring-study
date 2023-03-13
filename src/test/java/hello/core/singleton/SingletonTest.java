@@ -38,8 +38,8 @@ public class SingletonTest {
         System.out.println("singletonService2 = " + singletonService2);
 
         Assertions.assertThat(singletonService1).isSameAs(singletonService2);
-        //same ==
-        //equal
+        //same == => 객체 인스턴스 비교
+        //equal => 자바 문자열 비교
     }
 
     @Test
