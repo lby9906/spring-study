@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class MemberServiceImpl implements MemberService{
 
-    private final MemberRepository memberRepository;
+    private MemberRepository memberRepository;
 
     @Autowired //ac.getBean(MemberRepository.class) -> 이렇게 자동으로 들어간다고 보면됨
     public MemberServiceImpl(MemberRepository memberRepository) {
